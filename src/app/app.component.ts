@@ -1,3 +1,4 @@
+import { VsroomPage } from './../pages/vsroom/vsroom';
 
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { Component, ViewChild } from '@angular/core';
@@ -6,7 +7,6 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { HomePage } from '../pages/home/home';
 import { LoginPage } from '../pages/login/login';
 import { TypeRoomPage } from '../pages/type-room/type-room';
-import { PriceRoomPage } from '../pages/price-room/price-room';
 
 
 
@@ -26,7 +26,7 @@ export class MyApp {
     
       { title: 'Home', component: HomePage},
       { title: 'ประเภทห้องเช่า', component: TypeRoomPage},
-      { title: 'เปรียบเทียบราคาห้อง', component: PriceRoomPage},
+      { title: 'เปรียบเทียบราคาห้อง', component: VsroomPage},
       { title: 'ลงชื่อเข้าใช้', component: LoginPage}
       
 

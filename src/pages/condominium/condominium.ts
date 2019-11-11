@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams,AlertController } from 'ionic-angular';
 import { LoaddataProvider } from '../../providers/loaddata/loaddata';
 import { RoomDetailPage } from '../room-detail/room-detail';
 
@@ -21,7 +21,8 @@ export class CondominiumPage {
   rentedroom: any = [];
 
 
-  constructor(public navCtrl: NavController, public navParams: NavParams,public condo: LoaddataProvider) {
+  constructor(public navCtrl: NavController, public navParams: NavParams,public condo: LoaddataProvider,
+    public alertCtrl : AlertController) {
     this.loaddata();
   }
 
@@ -48,5 +49,12 @@ export class CondominiumPage {
       this.loaddata();
     }
 
-}
+    
+    
+
+
+  }
+
+
+
 }

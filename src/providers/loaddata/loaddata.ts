@@ -45,6 +45,30 @@ export class LoaddataProvider {
       return this.http.get(url);
     }
 
+    showroom(name_rentedroom){
+      let url = 'http://localhost/todoslim3/public/index.php/search/'+name_rentedroom;
+      return this.http.get(url);
+    }
+
+    loadrooms(){
+      let url = 'http://localhost/todoslim3/public/index.php/room';
+      return this.http.get(url);
+    }
+
+    loadprice_1(){
+      let url ='http://localhost/todoslim3/public/index.php/room3000';
+      return this.http.get(url);
+    }
+    //2500
+    loadprice_2(){
+      let url ='http://localhost/todoslim3/public/index.php/room3001';
+      return this.http.get(url);
+    }
+    //3000
+    loadprice_3(){
+      let url ='http://localhost/todoslim3/public/index.php/room4000';
+      return this.http.get(url);
+    }
     
 
 }

@@ -28,8 +28,12 @@
 
       </ion-card-content>
           
-      <button ion-button block icon-lef color="success" (click)="sharefacebook()" >Share on Facebook</button>
-
+      <ion-fab right bottom>
+          <button ion-fab color="light"><ion-icon name="share"></ion-icon></button>
+          <ion-fab-list side="left">
+            <button ion-fab (click)="share()"><ion-icon name="logo-facebook" (click)="shareFacebook()"></ion-icon></button>
+          </ion-fab-list>
+        </ion-fab>
   
 
 

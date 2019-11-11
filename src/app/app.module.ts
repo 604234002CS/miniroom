@@ -1,3 +1,4 @@
+import { VsroomPage } from './../pages/vsroom/vsroom';
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
@@ -21,7 +22,7 @@ import { HttpModule } from '@angular/http';
     LoginPage,
   TypeRoomPage,
   PriceRoomPage,
-  RoomDetailPage,
+  RoomDetailPage,VsroomPage
   
  
 
@@ -39,7 +40,7 @@ import { HttpModule } from '@angular/http';
     LoginPage,
     TypeRoomPage,
     PriceRoomPage,
-    RoomDetailPage,
+    RoomDetailPage,VsroomPage
     
 
     
