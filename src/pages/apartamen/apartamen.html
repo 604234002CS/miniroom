@@ -26,5 +26,11 @@
       <p><ion-icon name="call" ></ion-icon >{{room.phone_rentedroom}}</p>
       <h2 ion-text color="primary">ราคา {{room.price}} บาท</h2>
     </ion-item>
+    <ion-fab below  right edge>
+      <button ion-fab mini><ion-icon name="funnel"></ion-icon></button>
+      <ion-fab-list side="start">
+        <button ion-fab (click)="goToserch()"><ion-icon name="logo-bitcoin"></ion-icon></button>
+      </ion-fab-list>
+    </ion-fab>
 
 </ion-content>
