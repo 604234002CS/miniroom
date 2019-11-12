@@ -1,4 +1,3 @@
-import { SocialSharing } from '@ionic-native/social-sharing';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
@@ -19,7 +18,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 export class RoomDetailPage {
 
   roomdata:any=[];
-  constructor(public navCtrl: NavController, public navParams: NavParams,private socialSharing: SocialSharing) {
+  constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
@@ -28,10 +27,7 @@ export class RoomDetailPage {
     console.log(this.roomdata);
   }
 
-  share(){
-    
-  }
- 
+  
   
 
 }
